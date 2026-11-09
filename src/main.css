@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+/* Design tokens (from the original :root variables) */
+@theme {
+  --color-body: #222;
+  --color-accent: #b40610;
+  --color-secondary: #006039;
+  --color-disabled: #d9d9d9;
+  --color-footer: #e6e6e6;
+
+  --font-title: "Literata", serif;
+  --font-main: "Crimson Pro", serif;
+}
+
+/*
+ * "Width is at most N px" variants, mirroring the original @media (max-width: N) rules.
+ * Registered widest -> narrowest so narrower rules win the cascade.
+ */
+@custom-variant w880 (@media (width <= 880px));
+@custom-variant w580 (@media (width <= 580px));
+@custom-variant w450 (@media (width <= 450px));
+@custom-variant w320 (@media (width <= 320px));
+
+@layer base {
+  /* Match the original (non-Tailwind) reset */
+  body {
+    @apply font-main bg-white;
+    line-height: normal;
+  }
+  img {
+    max-width: none;
+    height: auto;
+  }
+  button {
+    padding: 0;
+  }
+}
+
+@layer components {
+  /* Headings */
+  .title {
+    @apply font-title text-body font-semibold;
+  }
+  .title--lg {
+    @apply text-[45px] uppercase w320:text-[32px];
+  }
+  .title--md {
+    @apply text-[24px] capitalize w320:text-[22px];
+  }
+  .title--sm {
+    @apply text-[20px] w320:text-[18px];
+  }
+
+  /* Body text */
+  .text {
+    @apply font-main text-body text-[20px] leading-[150%] font-normal w320:text-[17px];
+  }
+
+  /* Buttons */
+  .btn {
+    @apply flex cursor-pointer items-center gap-[5px] border-none bg-none text-[24px] font-bold whitespace-nowrap capitalize w320:text-[22px];
+  }
+  .btn--secondary {
+    @apply text-secondary;
+  }
+  .btn--primary {
+    @apply text-accent;
+  }
+  .btn__chevron {
+    @apply ml-auto;
+  }
+  .btn__chevron--secondary {
+    content: url(/media/images/icons/right-chevrone--secondary.svg);
+  }
+  .btn__chevron--primary {
+    content: url(/media/images/icons/right-chevrone--primary.svg);
+  }
+
+  /* Links */
+  .link {
+    @apply text-secondary underline transition-[text-decoration-color,color] duration-200 ease-[ease] hover:decoration-transparent;
+  }
+}
+
+@layer components {
+  /* Page container: 1200px content + 20px side padding */
+  .page-container {
+    @apply mx-auto w-full max-w-[1240px] px-5 w880:max-w-[674px] w450:max-w-none;
+  }
+}

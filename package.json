@@ -1,0 +1,28 @@
+{
+  "name": "cv-project",
+  "version": "1.0.0",
+  "description": "My first own web dev pet project.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devalexmuha/cv-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/devalexmuha/cv-project/issues"
+  },
+  "homepage": "https://github.com/devalexmuha/cv-project#readme",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.7"
+  },
+  "private": true
+}

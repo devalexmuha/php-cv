@@ -9,270 +9,270 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/src/main.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <nav class="header__nav">
-                        <ul class="header__list">
-                            <li class="header__item"><a href="/" class="header__link">Home</a></li>
-                            <li class="header__item"><a href="#" class="header__link">Experience</a></li>
+    <div class="flex min-h-screen w-full flex-col">
+        <header class="fixed z-[100] w-full bg-white shadow-[0_1px_5px_0_rgba(0,0,0,0.1)]">
+            <div class="page-container">
+                <div class="grid grid-cols-[1fr_auto_1fr] items-center w880:grid-cols-[auto_1fr]">
+                    <nav class="w880:hidden">
+                        <ul class="flex gap-10">
+                            <li class="font-title text-[21px] font-semibold text-body uppercase"><a href="/">Home</a></li>
+                            <li class="font-title text-[21px] font-semibold text-body uppercase"><a href="#">Experience</a></li>
                         </ul>
                     </nav>
-                    <div class="header__logo">
+                    <div class="font-title text-[60px] font-semibold text-body w320:text-[44px]">
                         CV
                     </div>
-                    <div class="header__socials">
-                        <a class="header__socials-item" href="https://www.linkedin.com/in/oleksandr-harazha-31910b314/" target="_blank">
-                            <img src="./media/images/icons/linkedin-icon.svg" alt="Linked in Ikon" class="header__socials-icon">
-                            <span class="header__socials-desc">Oleksandr Harazha</span>
+                    <div class="justify-self-end">
+                        <a class="flex items-center gap-2.5" href="https://www.linkedin.com/in/oleksandr-harazha-31910b314/" target="_blank">
+                            <img src="/media/images/icons/linkedin-icon.svg" alt="Linked in Ikon" class="w320:block w320:h-[27px]">
+                            <span class="font-title text-[18px] font-normal text-body w580:hidden">Oleksandr Harazha</span>
                         </a>
                     </div>
                 </div>
             </div>
         </header>
         <main>
-            <section class="hero">
-                <div class="container">
-                    <div class="hero__inner">
-                        <code class="hero__feature">&lt;meta name="iGaming company" content="noindex, nofollow"&gt;</code>
-                        <h1 class="title title--lg hero__title">Junior seo specialist</h1>
-                        <div class="hero__content">
-                            <p class="hero__desc text">I'm your future team lead, yet I'm still a junior.</p>
-                            <a href="./media/docs/oleksandr-harazha-resume.pdf" download class="btn btn--secondary hero__btn"><span class="btn__text">Download CV</span><span class="btn__chevron btn__chevron--secondary"></span></a>
+            <section class="pt-[89px] w320:pt-[65px]">
+                <div class="page-container">
+                    <div class="relative flex flex-col gap-5 py-[75px] w320:gap-2.5 w320:py-[50px]">
+                        <code class="absolute top-0 font-main text-[20px] leading-[150%] font-normal text-disabled w320:text-[13px]">&lt;meta name="iGaming company" content="noindex, nofollow"&gt;</code>
+                        <h1 class="title title--lg">Junior seo specialist</h1>
+                        <div class="flex gap-[5px] w580:flex-col w580:gap-2.5">
+                            <p class="text">I'm your future team lead, yet I'm still a junior.</p>
+                            <a href="./media/docs/oleksandr-harazha-resume.pdf" download class="btn btn--secondary w580:self-start"><span>Download CV</span><span class="btn__chevron btn__chevron--secondary"></span></a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="about">
-                <div class="container">
-                    <div class="about__inner">
-                            <h2 class="title title--md about__title">About Me</h2>
-                            <img src="./media/images/photos/hero-image.jpg" alt="Oleksandr Harazha author of web page photo" class="about__photo">
-                            <p class="about__desc text">My name is Oleksandr Harazha, and I am 20 years old. <br>Recently (21.08.2024), I finished an <a class="link about__link" href="https://prjctr.com/course/basic-seo">SEO beginner's</a> course from the Projector Creative &amp; Tech Online Institute with a golden certificate, where, in the role of team lead, I, along with my team, created an SEO audit and compiled the semantic core for a refrigeration systems website. Now (since 28.08.2024), on a part-time basis, I am working in-house on a project with a .edu domain and searching for my first full-stack company.</p>
+            <section>
+                <div class="page-container">
+                    <div class="grid grid-cols-[1fr_auto] grid-rows-[auto_1fr] gap-x-2.5 gap-y-5 w580:grid-cols-[1fr] w580:grid-rows-[auto_auto_1fr] w450:gap-y-2.5">
+                            <h2 class="title title--md w450:mb-[5px]">About Me</h2>
+                            <img src="/media/images/photos/hero-image.jpg" alt="Oleksandr Harazha author of web page photo" class="self-center [grid-area:1/2/-1/-1] w880:h-[250px] w580:[grid-area:2/1/2/2] w320:h-[200px]">
+                            <p class="text">My name is Oleksandr Harazha, and I am 20 years old. <br>Recently (21.08.2024), I finished an <a class="link" href="https://prjctr.com/course/basic-seo">SEO beginner's</a> course from the Projector Creative &amp; Tech Online Institute with a golden certificate, where, in the role of team lead, I, along with my team, created an SEO audit and compiled the semantic core for a refrigeration systems website. Now (since 28.08.2024), on a part-time basis, I am working in-house on a project with a .edu domain and searching for my first full-stack company.</p>
                     </div>
                 </div>
             </section>
-            <section class="education">
-                <div class="container">
-                    <div class="education__inner">
-                        <h2 class="title title--md education__title">My Education</h2>
-                        <ul class="education__list list">
-                            <li class="list__item">
-                                    <h3 class="title title--sm list__title">Poltava Polytechnic Professional College, a Separated Structural Unit of National Technical University "Kharkiv Polytechnic Institute"</h3>
-                                    <div class="list__description description">
-                                        <p class="description__item text">Grade: Software Developer</p>
-                                        <p class="description__item text">Sep 2019 - Jun 2023</p>
-                                        <p class="description__item text">Description: Poltava Polytechnic College is the place where I learned the basics of HTML and CSS.</p>
+            <section>
+                <div class="page-container">
+                    <div class="mt-[50px] flex flex-col gap-5 w450:mt-10 w450:gap-[15px]">
+                        <h2 class="title title--md">My Education</h2>
+                        <ul class="ml-[106px] flex flex-col gap-5 w880:ml-[30px] w450:ml-2.5 w450:gap-[15px]">
+                            <li class="relative grid grid-cols-[3fr_1fr] grid-rows-[auto_auto] gap-x-5 gap-y-2.5 before:absolute before:top-[15px] before:-left-14 before:block before:h-[5px] before:w-9 before:bg-disabled before:content-[''] w880:before:hidden w580:grid-cols-[1fr] w580:grid-rows-[auto_auto_auto]">
+                                    <h3 class="title title--sm">Poltava Polytechnic Professional College, a Separated Structural Unit of National Technical University "Kharkiv Polytechnic Institute"</h3>
+                                    <div>
+                                        <p class="text">Grade: Software Developer</p>
+                                        <p class="text">Sep 2019 - Jun 2023</p>
+                                        <p class="text">Description: Poltava Polytechnic College is the place where I learned the basics of HTML and CSS.</p>
                                     </div>
-                                <figure class="list__media">
-                                    <img src="./media/images/photos/ppfc-logo.png" alt="Poltava Polytechnic College logo" class="list__photo">
+                                <figure class="flex items-center [grid-area:1/2/-1/-1] w580:[grid-area:2/1/2/2]">
+                                    <img src="/media/images/photos/ppfc-logo.png" alt="Poltava Polytechnic College logo" class="w450:h-[100px]">
                                 </figure>
                             </li>
-                            <li class="list__item">
-                                    <h3 class="title title--sm list__title">Projector Creative & Tech Online Institute</h3>
-                                    <div class="list__description description">
-                                        <p class="description__item text">Grade: Junior SEO Specialist</p>
-                                        <p class="description__item text">Jun 2024 - Aug 2024</p>
-                                        <p class="description__item text">Achievements: Golden certificate.</p>
-                                        <p class="description__item text">Description. While studying at Projector, we covered:</p>
-                                        <ul class="description__list">
-                                            <li class="description__list-item text">On-page SEO (keyword optimization, crawlability, meta tags, title and description, headings H1-H6);</li>
-                                            <li class="description__list-item text">Technical SEO (404 pages, technical duplicates, redirects, canonical tags, hreflang, site speed optimization);</li>
-                                            <li class="description__list-item text">Link building (backlink profile analysis, anchor text planning, and link building strategy creation).</li>
+                            <li class="relative grid grid-cols-[3fr_1fr] grid-rows-[auto_auto] gap-x-5 gap-y-2.5 before:absolute before:top-[15px] before:-left-14 before:block before:h-[5px] before:w-9 before:bg-disabled before:content-[''] w880:before:hidden w580:grid-cols-[1fr] w580:grid-rows-[auto_auto_auto]">
+                                    <h3 class="title title--sm">Projector Creative & Tech Online Institute</h3>
+                                    <div>
+                                        <p class="text">Grade: Junior SEO Specialist</p>
+                                        <p class="text">Jun 2024 - Aug 2024</p>
+                                        <p class="text">Achievements: Golden certificate.</p>
+                                        <p class="text">Description. While studying at Projector, we covered:</p>
+                                        <ul>
+                                            <li class="text">On-page SEO (keyword optimization, crawlability, meta tags, title and description, headings H1-H6);</li>
+                                            <li class="text">Technical SEO (404 pages, technical duplicates, redirects, canonical tags, hreflang, site speed optimization);</li>
+                                            <li class="text">Link building (backlink profile analysis, anchor text planning, and link building strategy creation).</li>
                                         </ul>
-                                        <p class="description__item text">Personally, I found my passion for Technical SEO and On-page SEO.</p>
+                                        <p class="text">Personally, I found my passion for Technical SEO and On-page SEO.</p>
                                     </div>
-                                <figure class="list__media">
-                                    <img src="./media/images/photos/prjctr-logo.png" alt="Projector Online Institute logo" class="list__photo">
+                                <figure class="flex items-center [grid-area:1/2/-1/-1] w580:[grid-area:2/1/2/2]">
+                                    <img src="/media/images/photos/prjctr-logo.png" alt="Projector Online Institute logo" class="w450:h-[100px]">
                                 </figure>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section class="expectation">
-                <div class="container">
-                    <div class="expectation__inner">
-                            <h2 class="title title--md expectation__title">The Company Of My Dream</h2>
-                            <p class="expectation__text text">Along with my experience in SEO, I’ve got a keen interest in Technical and On-page SEO. This is what I am going work with in my future company. I want to become an expert in technical optimization.</p>
-                            <p class="expectation__text text">On another side, while studying at Projector Online Institute, during the time of working on a client’s project, I was assigned as a team lead, and I actually fell in love with the feeling of taking responsibility. I did my best for my team, so after one month of working, we successfully presented our work to the client.</p>
-                            <p class="expectation__text text">My vector of growth: SEO Team Lead over the whole project, Technical SEO expert.</p>
-                            <p class="expectation__text text">Currently, I’m based in Poltava, but my goal is to move to Kyiv in the next few months. Now I’m searching for a remote position in a product company, where I can commit to a long-term job, constant growth of myself as an SEO specialist, along with the company’s website search visibility. Initially, it would be ideal for me to have an SEO mentor, whom I can ask questions if needed. Ultimately, I aspire one day to manage a commercial SEO team and become a team lead.</p>
+            <section>
+                <div class="page-container">
+                    <div class="mt-[50px] flex flex-col gap-5 w450:mt-10 w450:gap-2.5">
+                            <h2 class="title title--md">The Company Of My Dream</h2>
+                            <p class="text">Along with my experience in SEO, I’ve got a keen interest in Technical and On-page SEO. This is what I am going work with in my future company. I want to become an expert in technical optimization.</p>
+                            <p class="text">On another side, while studying at Projector Online Institute, during the time of working on a client’s project, I was assigned as a team lead, and I actually fell in love with the feeling of taking responsibility. I did my best for my team, so after one month of working, we successfully presented our work to the client.</p>
+                            <p class="text">My vector of growth: SEO Team Lead over the whole project, Technical SEO expert.</p>
+                            <p class="text">Currently, I’m based in Poltava, but my goal is to move to Kyiv in the next few months. Now I’m searching for a remote position in a product company, where I can commit to a long-term job, constant growth of myself as an SEO specialist, along with the company’s website search visibility. Initially, it would be ideal for me to have an SEO mentor, whom I can ask questions if needed. Ultimately, I aspire one day to manage a commercial SEO team and become a team lead.</p>
                     </div>
                 </div>
             </section>
-            <section class="experience">
-                <div class="container">
-                    <div class="experience__inner">
-                        <h2 class="title title--md education__title">My Experience</h2>
-                        <ul class="experience__list list">
-                            <li class="list__item">
-                                  <h3 class="title title--sm list__title">Student SEO</h3>
-                                  <div class="list__description description">
-                                    <p class="description__item text">Projector Institute · Apprenticeship</p>
-                                    <p class="description__item text">Jul 2024 - Aug 2024 · 1 month</p>
-                                    <p class="description__item text">Description: In the second month of studying, Projector provided us with a real client. My team of 7 people and I conducted an SEO audit and compiled the semantic core for a refrigeration systems website (B2B). At the end of the course, we successfully presented our work to the customer, it was a great experience to me to lead the SEO team and speak with the business owner. I created keyword clusters for the entire category, found gap in structure of the website, analyzed meta tags, created a sitemap, and worked with structured data. Our tech stack included Ahrefs and Screaming Frog.</p>
+            <section>
+                <div class="page-container">
+                    <div class="mt-[50px] flex flex-col gap-5 w450:mt-10 w450:gap-[15px]">
+                        <h2 class="title title--md">My Experience</h2>
+                        <ul class="ml-[106px] flex flex-col gap-5 w880:ml-[30px] w450:ml-2.5 w450:gap-[15px]">
+                            <li class="relative grid grid-cols-[3fr_1fr] grid-rows-[auto_auto] gap-x-5 gap-y-2.5 before:absolute before:top-[15px] before:-left-14 before:block before:h-[5px] before:w-9 before:bg-disabled before:content-[''] w880:before:hidden w580:grid-cols-[1fr] w580:grid-rows-[auto_auto_auto]">
+                                  <h3 class="title title--sm">Student SEO</h3>
+                                  <div>
+                                    <p class="text">Projector Institute · Apprenticeship</p>
+                                    <p class="text">Jul 2024 - Aug 2024 · 1 month</p>
+                                    <p class="text">Description: In the second month of studying, Projector provided us with a real client. My team of 7 people and I conducted an SEO audit and compiled the semantic core for a refrigeration systems website (B2B). At the end of the course, we successfully presented our work to the customer, it was a great experience to me to lead the SEO team and speak with the business owner. I created keyword clusters for the entire category, found gap in structure of the website, analyzed meta tags, created a sitemap, and worked with structured data. Our tech stack included Ahrefs and Screaming Frog.</p>
                                   </div>
-                                <figure class="list__media">
-                                  <img src="./media/images/photos/prjctr-logo.png" alt="Projector Online Institute logo" class="list__photo">
+                                <figure class="flex items-center [grid-area:1/2/-1/-1] w580:[grid-area:2/1/2/2]">
+                                  <img src="/media/images/photos/prjctr-logo.png" alt="Projector Online Institute logo" class="w450:h-[100px]">
                                 </figure>
                               </li>
-                              <li class="list__item">
-                                  <h3 class="title title--sm list__title">Junior SEO Specialist </h3>
-                                  <div class="list__description description">
-                                    <p class="description__item text">UETS · Part time</p>
-                                    <p class="description__item text">Aug 2024 - Present</p>
-                                    <p class="description__item text">Description: One week after I finished studying at Projector, I found my first in-house, part-time SEO job. The company is the Ukrainian Evangelical Theological Seminary, which operates in the edu-tech domain. Their website, changed its domain from uets.net to uets.edu.ua,  and now has 603 pages. Our SEO team consists of two people. 
+                              <li class="relative grid grid-cols-[3fr_1fr] grid-rows-[auto_auto] gap-x-5 gap-y-2.5 before:absolute before:top-[15px] before:-left-14 before:block before:h-[5px] before:w-9 before:bg-disabled before:content-[''] w880:before:hidden w580:grid-cols-[1fr] w580:grid-rows-[auto_auto_auto]">
+                                  <h3 class="title title--sm">Junior SEO Specialist </h3>
+                                  <div>
+                                    <p class="text">UETS · Part time</p>
+                                    <p class="text">Aug 2024 - Present</p>
+                                    <p class="text">Description: One week after I finished studying at Projector, I found my first in-house, part-time SEO job. The company is the Ukrainian Evangelical Theological Seminary, which operates in the edu-tech domain. Their website, changed its domain from uets.net to uets.edu.ua,  and now has 603 pages. Our SEO team consists of two people.
                                         In the first month of working, I with my colleague compiled the semantic core. Now I’m working on technical optimization: I Created a Technical SEO Audit; By working in WordPress, I’ve set up 59 redirects, closed 38 pages from indexation using the Robots meta tag, updated the Robots.txt file, and currently, I’m updating the 301 links throughout the website to return 200 response codes. Our tech stack includes Ahrefs and Screaming Frog.</p>
                                   </div>
-                                <figure class="list__media">
-                                  <img src="./media/images/photos/uets-logo.png" alt="UETS logo" class="list__photo">
+                                <figure class="flex items-center [grid-area:1/2/-1/-1] w580:[grid-area:2/1/2/2]">
+                                  <img src="/media/images/photos/uets-logo.png" alt="UETS logo" class="w450:h-[100px]">
                                 </figure>
-                              </li>                             
+                              </li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section class="skills">
-                <div class="container">
-                    <div class="skills__inner">
-                        <h2 class="title title--md skills__title">My Skills</h2>
-                        <div class="skills__block">
-                            <div class="skills__group">
-                                <h3 class="title title--sm skills__title">Hard</h3>
-                                <ul class="skills__list">
-                                    <li class="skills__list-item text">Keyword research (I can do it using Ahrefs, or manually by using Google search suggestions);</li>
-                                    <li class="skills__list-item text">SEO audit creation (for this I use Screaming Frog);</li>
-                                    <li class="skills__list-item text">Technical SEO (broken links, redirects, technical duplicates, canonical tags, hreflang, robots.txt, sitemap.xml: these are all my strengths. Site speed optimization and structured data are my areas of growth);</li>
-                                    <li class="skills__list-item text">On-page SEO (title tag, description tag, headings H1-H6, crawlability, website structure: I worked on this when I studied at Projector);</li>
-                                    <li class="skills__list-item text">Basic level of HTML, CSS (this page was manualy developed by me in Visual Studio Code, you can check its mobile version);</li>
-                                    <li class="skills__list-item text">Web design, basic understanding of UX/UI (this page was designed by me from scratch in Figma).</li>
-                                    <li class="skills__list-item text">My current typing speed is 40 WPM (QWERTY, English);</li>
+            <section>
+                <div class="page-container">
+                    <div class="mt-[50px] flex flex-col gap-5 w450:mt-10 w450:gap-[15px]">
+                        <h2 class="title title--md">My Skills</h2>
+                        <div class="flex w880:flex-col w880:gap-5">
+                            <div class="flex flex-1 flex-col gap-2.5">
+                                <h3 class="title title--sm">Hard</h3>
+                                <ul class="ml-[50px] flex flex-col gap-2.5 w880:ml-0">
+                                    <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">Keyword research (I can do it using Ahrefs, or manually by using Google search suggestions);</li>
+                                    <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">SEO audit creation (for this I use Screaming Frog);</li>
+                                    <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">Technical SEO (broken links, redirects, technical duplicates, canonical tags, hreflang, robots.txt, sitemap.xml: these are all my strengths. Site speed optimization and structured data are my areas of growth);</li>
+                                    <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">On-page SEO (title tag, description tag, headings H1-H6, crawlability, website structure: I worked on this when I studied at Projector);</li>
+                                    <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">Basic level of HTML, CSS (this page was manualy developed by me in Visual Studio Code, you can check its mobile version);</li>
+                                    <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">Web design, basic understanding of UX/UI (this page was designed by me from scratch in Figma).</li>
+                                    <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">My current typing speed is 40 WPM (QWERTY, English);</li>
                                 </ul>
                             </div>
-                            <div class="skills__group">
-                                <h3 class="title title--sm skills__title">Soft</h3>
-                                <ul class="skills__list">
-                                    <li class="skills__list-item text">High communication skills (just give me a microphone, and you’ll never take it away from me);</li>
-                                    <li class="skills__list-item text">Team leadership (I love to take responsibility on my shoulders and lead people to success);</li>
-                                    <li class="skills__list-item text">Time management (time is my best friend);</li>
-                                    <li class="skills__list-item text">Patience (I love when everything is settled into a consistent routine);</li>
-                                    <li class="skills__list-item text">Hardworking (there are over 8 billion people on Earth, and to be at least in the top million, there’s no time for rest days and sleeping).</li>
+                            <div class="flex flex-1 flex-col gap-2.5">
+                                <h3 class="title title--sm">Soft</h3>
+                                <ul class="ml-[50px] flex flex-col gap-2.5 w880:ml-0">
+                                    <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">High communication skills (just give me a microphone, and you’ll never take it away from me);</li>
+                                    <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">Team leadership (I love to take responsibility on my shoulders and lead people to success);</li>
+                                    <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">Time management (time is my best friend);</li>
+                                    <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">Patience (I love when everything is settled into a consistent routine);</li>
+                                    <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">Hardworking (there are over 8 billion people on Earth, and to be at least in the top million, there’s no time for rest days and sleeping).</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="skills__block">
-                            <div class="skills__group">
-                                <h3 class="title title--sm skills__title">Programs: Ahrefs, Screaming frog, WordPress, Google sheets.</h3>
+                        <div class="flex w880:flex-col w880:gap-5">
+                            <div class="flex flex-1 flex-col gap-2.5">
+                                <h3 class="title title--sm">Programs: Ahrefs, Screaming frog, WordPress, Google sheets.</h3>
                             </div>
                         </div>
-                        <div class="skills__block">
-                            <div class="skills__group">
-                                <h3 class="title title--sm skills__title">Languages</h3>
-                                <ul class="skills__list">
-                                    <li class="skills__list-item text">English: Intermediate (3,153 words learned, practicing daily. I started studying English when I worked as a barista in 2022. I continued practicing my English while working in a hotel in 2023 by speaking with native guests);</li>
-                                    <li class="skills__list-item text">Latin: Elementary (482 words learned, practicing daily. I love this language. 70% of English and 16% of the Russian language are based on it);</li>
-                                    <li class="skills__list-item text">Ukrainian: Native (Although I spoke Russian most of my life, recently I’ve started incorporating Ukrainian more into my speech);</li>
-                                    <li class="skills__list-item text">Russian: Fully native (It is the language of my family and most people from my city).</li>
+                        <div class="flex w880:flex-col w880:gap-5">
+                            <div class="flex flex-1 flex-col gap-2.5">
+                                <h3 class="title title--sm">Languages</h3>
+                                <ul class="ml-[50px] flex flex-col gap-2.5 w880:ml-0">
+                                    <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">English: Intermediate (3,153 words learned, practicing daily. I started studying English when I worked as a barista in 2022. I continued practicing my English while working in a hotel in 2023 by speaking with native guests);</li>
+                                    <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">Latin: Elementary (482 words learned, practicing daily. I love this language. 70% of English and 16% of the Russian language are based on it);</li>
+                                    <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">Ukrainian: Native (Although I spoke Russian most of my life, recently I’ve started incorporating Ukrainian more into my speech);</li>
+                                    <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">Russian: Fully native (It is the language of my family and most people from my city).</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="certificates">
-                <div class="container">
-                    <div class="certificates__inner">
-                        <h2 class="title title--md certificates__title">Certificates</h2>
-                        <div class="certificates__list">
-                            <figure class="certificates__item certificate">
-                                <h3 class="title title--sm certificate__title">Projector Creative & Tech Online Institute</h3>
-                                <img src="./media/images/photos/prjctr-certificate.png" alt="Projector Golden SEO Certificate" class="certificate__photo">
-                                <figcaption class="certificate__desc text">"I'm proud of myself for this <a class="link certificate__link"  href="https://prjctr.com/certificate/01HVKSMEE0KNPZ65SS9ZHBSZ1Y">Golden certificate</a>; I put a lot of effort into it."</figcaption>
+            <section>
+                <div class="page-container">
+                    <div class="mt-[50px] flex flex-col gap-5 w450:mt-10 w450:gap-[15px]">
+                        <h2 class="title title--md">Certificates</h2>
+                        <div class="flex gap-2.5 w880:flex-col w880:gap-5 w450:gap-[15px]">
+                            <figure class="flex flex-1 flex-col items-start gap-2.5">
+                                <h3 class="title title--sm">Projector Creative & Tech Online Institute</h3>
+                                <img src="/media/images/photos/prjctr-certificate.png" alt="Projector Golden SEO Certificate" class="w450:w-full">
+                                <figcaption class="text">"I'm proud of myself for this <a class="link" href="https://prjctr.com/certificate/01HVKSMEE0KNPZ65SS9ZHBSZ1Y">Golden certificate</a>; I put a lot of effort into it."</figcaption>
                             </figure>
-                            <figure class="certificates__item certificate">
-                                <h3 class="title title--sm certificate__title">HubSpot</h3>
-                                <img src="./media/images/photos/hubspot-certificate.png" alt="HubSpot SEO Certificate" class="certificate__photo">
-                                <figcaption class="certificate__desc text">"Overview of SEO. My first SEO certificate."</figcaption>
+                            <figure class="flex flex-1 flex-col items-start gap-2.5">
+                                <h3 class="title title--sm">HubSpot</h3>
+                                <img src="/media/images/photos/hubspot-certificate.png" alt="HubSpot SEO Certificate" class="w450:w-full">
+                                <figcaption class="text">"Overview of SEO. My first SEO certificate."</figcaption>
                             </figure>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="passion">
-                <div class="container">
-                    <div class="passion__inner">
-                        <h2 class="title title--md passion__title">My Passion</h2>
-                        <div class="passion__item">
-                            <h3 class="title title--sm passion__title">Music</h3>
-                            <p class="passion__text text">"The idea of me singing in the evening makes me move quicker in the morning."</p>
-                            <ul class="passion__list">
-                                <li class="passion__list-item text">Singing: I love this from my heart (I’m a beginner; day 321);</li>
-                                <li class="passion__list-item text">Piano: In combination with singing, it feels like time has stopped.</li>
+            <section>
+                <div class="page-container">
+                    <div class="mt-[50px] flex flex-col gap-5 w450:mt-10 w450:gap-[15px]">
+                        <h2 class="title title--md">My Passion</h2>
+                        <div class="flex flex-col gap-2.5">
+                            <h3 class="title title--sm">Music</h3>
+                            <p class="text">"The idea of me singing in the evening makes me move quicker in the morning."</p>
+                            <ul class="ml-[50px] flex flex-col gap-2.5 w880:ml-0">
+                                <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">Singing: I love this from my heart (I’m a beginner; day 321);</li>
+                                <li class="text flex items-center gap-5 before:block before:size-2.5 before:shrink-0 before:bg-disabled before:content-['']">Piano: In combination with singing, it feels like time has stopped.</li>
                             </ul>
                         </div>
-                        <div class="passion__item">
-                            <h3 class="title title--sm passion__title">Calisthenics</h3>
-                            <p class="passion__text text">"I love to be healthy, so I love to do my day-to-day rings workout."</p>
+                        <div class="flex flex-col gap-2.5">
+                            <h3 class="title title--sm">Calisthenics</h3>
+                            <p class="text">"I love to be healthy, so I love to do my day-to-day rings workout."</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="features">
-                <div class="container">
-                    <div class="features__inner">
-                        <div class="features__item">
-                            <h2 class="title title--md features__title">My energy independence</h2>
-                            <p class="features__desc text">Powered by EcoFlow Delta 2.</p>
+            <section>
+                <div class="page-container">
+                    <div>
+                        <div class="mt-[50px] flex flex-col gap-5 w450:mt-10 w450:gap-[15px]">
+                            <h2 class="title title--md">My energy independence</h2>
+                            <p class="text">Powered by EcoFlow Delta 2.</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="references">
-                <div class="container">
-                    <div class="references__inner">
-                        <h2 class="title title--md references__title">References</h2>
-                        <div class="references__item">
-                            <a href="https://www.linkedin.com/in/elena-osipova-ba755889/" class="references__link link"><img src="./media/images/icons/linkedin-icon.svg" alt="LinkedIn icon" class="references__icon"><span class="references__name">OLENA OSIPOVA</span></a>
-                            <p class="references__text text">Team Lead SEO - Skelar | Global SEO Manager</p>
-                            <p class="references__text text">"Olena was my SEO Course Mentor at Projector Institute."</p>
+            <section>
+                <div class="page-container">
+                    <div class="mt-[50px] flex flex-col gap-5 w450:mt-10 w450:gap-[15px]">
+                        <h2 class="title title--md block max-w-[300px] border-b-2 border-secondary w450:max-w-full">References</h2>
+                        <div class="flex flex-col gap-2.5">
+                            <a href="https://www.linkedin.com/in/elena-osipova-ba755889/" class="link flex items-center gap-2.5 font-title text-[20px] font-semibold w450:text-[18px]"><img src="/media/images/icons/linkedin-icon.svg" alt="LinkedIn icon" class="w450:block w450:h-[27px]"><span>OLENA OSIPOVA</span></a>
+                            <p class="text">Team Lead SEO - Skelar | Global SEO Manager</p>
+                            <p class="text">"Olena was my SEO Course Mentor at Projector Institute."</p>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__inner">
-                    <div class="footer__info footer-info">
-                        <div class="title title--md footer-info__title">CONTACT DETAILS</div>
-                        <div class="footer-info__content">
-                            <div class="footer-info__item">
-                                <ul class="footer-info__list footer-info__item--left">
-                                    <li class="footer-info__list-item"><a href="mailto:olekandrgaraza@gmail.com" class="footer-info__link"><img src="./media/images/icons/email-icon.svg" alt="Email Icon" class="footer-info__icon"><span class="footer-info__text">olekandrgaraza@gmail.com</span></a></li>
-                                    <li class="footer-info__list-item"><a href="tel:+380960358697" class="footer-info__link"><img src="./media/images/icons/phone-call-icon.svg" alt="Phone Icon" class="footer-info__icon"><span class="footer-info__text">+380960358697</span></a></li>
+        <footer class="mt-[50px] bg-footer w450:mt-10">
+            <div class="page-container">
+                <div class="relative mt-[50px] flex flex-col w450:mt-10">
+                    <div class="z-10 flex flex-col gap-5">
+                        <div class="title title--md">CONTACT DETAILS</div>
+                        <div class="grid grid-cols-[1fr_auto_1fr] items-center w880:grid-cols-[1fr_1fr] w880:grid-rows-[1fr_1fr] w880:gap-x-2.5 w880:gap-y-5 w450:grid-cols-[1fr] w450:grid-rows-[1fr_1fr_1fr] w450:gap-y-10">
+                            <div>
+                                <ul class="flex flex-col gap-2.5">
+                                    <li><a href="mailto:olekandrgaraza@gmail.com" class="flex items-center gap-2.5 font-title text-[18px] text-secondary"><img src="/media/images/icons/email-icon.svg" alt="Email Icon" class="w320:block w320:max-h-[27px] w320:w-auto"><span>olekandrgaraza@gmail.com</span></a></li>
+                                    <li><a href="tel:+380960358697" class="flex items-center gap-2.5 font-title text-[18px] text-secondary"><img src="/media/images/icons/phone-call-icon.svg" alt="Phone Icon" class="w320:block w320:max-h-[27px] w320:w-auto"><span>+380960358697</span></a></li>
                                 </ul>
                             </div>
-                            <div class="footer-info__item footer-info__item--middle">
-                                <ul class="footer-info__list">
-                                    <li class="footer-info__list-item"><a href="./media/docs/oleksandr-harazha-resume.pdf" download class="btn btn--secondary footer-info__btn"><span class="btn__text">Download CV</span> <span class="btn__chevron btn__chevron--secondary"></span></a></li>
-                                    <li class="footer-info__list-item"><a href="#" class="btn btn--primary footer-info__btn"><span class="btn__text">Open Portfolio</span><span class="btn__chevron btn__chevron--primary"></span></a></li>
+                            <div class="w880:[grid-area:2/1/-1/-1] w880:justify-self-center w450:[grid-area:2/1/3/2]">
+                                <ul class="flex flex-col gap-2.5">
+                                    <li><a href="./media/docs/oleksandr-harazha-resume.pdf" download class="btn btn--secondary w-full"><span>Download CV</span> <span class="btn__chevron btn__chevron--secondary"></span></a></li>
+                                    <li><a href="#" class="btn btn--primary w-full"><span>Open Portfolio</span><span class="btn__chevron btn__chevron--primary"></span></a></li>
                                 </ul>
                             </div>
-                            <div class="footer-info__item footer-info__item--last">
-                                <ul class="footer-info__list">
-                                    <li class="footer-info__list-item"><a target="_blank" href="https://www.linkedin.com/in/oleksandr-harazha-31910b314/" class="footer-info__link"><img src="./media/images/icons/linkedin-icon.svg" alt="LinkedIn Icon" class="footer-info__icon"><span class="footer-info__text">LinkedIn</span></a></li>
-                                    <li class="footer-info__list-item"><a target="_blank" href="https://t.me/alexmuuha" class="footer-info__link"><img src="./media/images/icons/telegram-icon.svg" alt="Telegram Icon" class="footer-info__icon"><span class="footer-info__text">Telegram</span></a></li>
+                            <div class="justify-self-end w450:justify-self-start">
+                                <ul class="flex flex-col gap-2.5">
+                                    <li><a target="_blank" href="https://www.linkedin.com/in/oleksandr-harazha-31910b314/" class="flex items-center gap-2.5 font-title text-[18px] text-secondary"><img src="/media/images/icons/linkedin-icon.svg" alt="LinkedIn Icon" class="w320:block w320:max-h-[27px] w320:w-auto"><span>LinkedIn</span></a></li>
+                                    <li><a target="_blank" href="https://t.me/alexmuuha" class="flex items-center gap-2.5 font-title text-[18px] text-secondary"><img src="/media/images/icons/telegram-icon.svg" alt="Telegram Icon" class="w320:block w320:max-h-[27px] w320:w-auto"><span>Telegram</span></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <img src="./media/images/icons/muha-sign.svg" alt="Footer Sign" class="footer-info__sign">
-                    <div class="footer__copyright">
+                    <img src="/media/images/icons/muha-sign.svg" alt="Footer Sign" class="absolute top-[19px] left-[166px] w880:hidden">
+                    <div class="mt-[69px] border-t-2 border-secondary py-2.5 w880:mt-5 w450:mt-10">
                         <p class="text">Designed by Alex Muha</p>
                     </div>
                 </div>

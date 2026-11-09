@@ -1,2 +1,2 @@
-# cv-project
-My first own web dev pet project.
+# php cv
+My php / laravel cv
