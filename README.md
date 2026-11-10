@@ -1,2 +1,2 @@
 # php cv
-My php / laravel cv
+My php / Laravel cv
