@@ -120,6 +120,27 @@ Keyboard: → next, ← back, Home = start, End = contacts. The **Contents** but
 
 ---
 
+## 4.1 How AI tools (and visitors without JavaScript) read the CV
+
+Most AI tools (ChatGPT, Claude, Perplexity) read only the raw HTML and don't run JavaScript.
+The React app alone would look like an empty page to them. So during `npm run build`:
+
+- `prerender/static-cv.js` turns `cv.json` + `projects.json` into the **whole CV as plain HTML**
+  and writes it into `index.html` (like rendering a Blade view to a string).
+- It also creates `cv.md`, the same CV as Markdown (`…/php-cv/cv.md`), and adds
+  structured "Person" data (schema.org JSON-LD) to the `<head>`.
+- In a normal browser a tiny script in `index.html` hides that plain copy at once,
+  and React shows the interactive CV. Without JavaScript the plain copy is the page.
+
+The plugin that wires this up is `aiReadableCv()` in `vite.config.js`.
+You don't need to do anything: edit the JSON as usual and the plain copy follows.
+Only if you add a **new kind of field** to the JSON, add it to `static-cv.js` too.
+
+To see what an AI sees: run `npm run build`, open `dist/index.html` in a text editor,
+or open the page with JavaScript turned off in the browser's DevTools.
+
+---
+
 ## 5. Everyday tasks
 
 ### Run it locally

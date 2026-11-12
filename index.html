@@ -11,13 +11,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
+    <link rel="alternate" type="text/markdown" href="./cv.md" title="This CV as plain text">
+    <!--
+        The plain-text CV (#cv-text, added at build time) is for AI tools and crawlers that
+        don't run JavaScript. When JavaScript works, the React app shows the CV instead, so
+        the plain copy is visually hidden here, before anything is painted (no flash).
+    -->
+    <script>document.documentElement.classList.add('js')</script>
+    <style>.js #cv-text { position: absolute; top: 0; left: 0; width: 1px; height: 1px; padding: 0; margin: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }</style>
 </head>
 <body>
     <!-- React renders the whole CV into this div (see src/main.jsx) -->
     <div id="root"></div>
-    <noscript>
-        <p style="padding: 20px; font-family: serif;">This CV needs JavaScript. You can <a href="./media/docs/oleksandr-harazha-resume.pdf">download the PDF version</a> instead.</p>
-    </noscript>
+
+    <!-- static-cv -->
+
     <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>

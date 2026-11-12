@@ -27,7 +27,12 @@
 @layer base {
   html,
   body {
-    @apply h-full overflow-hidden bg-white font-main text-body antialiased;
+    @apply bg-white font-main text-body antialiased;
+  }
+  /* The app fills the screen and scrolls inside its steps. Without JS the plain CV scrolls normally. */
+  .js,
+  .js body {
+    @apply h-full overflow-hidden;
   }
   img {
     height: auto;
@@ -105,5 +110,36 @@
   /* Square bullet, same as the original CV lists */
   .bullet {
     @apply relative pl-6 before:absolute before:top-[0.55em] before:left-0 before:block before:size-2.5 before:bg-disabled before:content-[''];
+  }
+}
+
+/*
+ * Plain-text CV (#cv-text), generated at build time by prerender/static-cv.js.
+ * Visible only when JavaScript is off; AI tools read it from the HTML either way.
+ */
+@layer components {
+  .static-cv {
+    @apply mx-auto max-w-[760px] px-5 py-12 text-[19px] leading-[155%];
+  }
+  .static-cv h1 {
+    @apply mt-1 mb-3 font-title text-[34px] leading-[120%] font-semibold uppercase;
+  }
+  .static-cv h2 {
+    @apply mt-10 mb-3 border-t border-disabled pt-6 font-title text-[24px] font-semibold;
+  }
+  .static-cv h3 {
+    @apply mt-6 mb-2 font-title text-[19px] font-semibold;
+  }
+  .static-cv p {
+    @apply mb-3;
+  }
+  .static-cv ul {
+    @apply mb-3 list-disc pl-6;
+  }
+  .static-cv ol {
+    @apply mb-3 list-decimal pl-6 text-[17px];
+  }
+  .static-cv a {
+    @apply text-secondary underline underline-offset-2;
   }
 }
