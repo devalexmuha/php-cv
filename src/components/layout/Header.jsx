@@ -15,37 +15,13 @@ export default function Header({ steps, chapters, navigation }) {
                 <button
                     type="button"
                     onClick={() => goTo(0)}
-                    className="cursor-pointer font-title text-[40px] leading-none font-semibold w580:text-[34px]"
+                    className="cursor-pointer font-title text-[50px] leading-none font-semibold w580:text-[34px]"
                     aria-label="CV, back to the start"
                 >
                     CV
                 </button>
 
-                {/* Chapter tabs: only on wide screens, smaller screens use the Contents menu */}
-                <nav aria-label="Chapters" className="mx-auto w1100:hidden">
-                    <ol className="flex items-center gap-1">
-                        {chapters.map((chapter) => {
-                            const isCurrent = chapter.name === step.chapter;
-                            return (
-                                <li key={chapter.name}>
-                                    <button
-                                        type="button"
-                                        onClick={() => goTo(chapter.firstIndex)}
-                                        aria-current={isCurrent ? 'step' : undefined}
-                                        className={`cursor-pointer rounded-full px-3.5 py-2 font-title text-[14px] transition-colors ${
-                                            isCurrent ? 'bg-body text-white' : 'text-body/55 hover:text-body'
-                                        }`}
-                                    >
-                                        {chapter.name}
-                                    </button>
-                                </li>
-                            );
-                        })}
-                    </ol>
-                </nav>
-
                 <div className="ml-auto flex items-center gap-3 w1100:ml-auto">
-                    <TableOfContents steps={steps} navigation={navigation} />
                     <a
                         href={LINKEDIN}
                         target="_blank"
@@ -56,6 +32,7 @@ export default function Header({ steps, chapters, navigation }) {
                         <img src={asset('media/images/icons/linkedin-icon.svg')} alt="" className="size-7" />
                         <span className="w880:hidden">Oleksandr Harazha</span>
                     </a>
+                    <TableOfContents steps={steps} navigation={navigation} />
                 </div>
             </div>
 

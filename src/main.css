@@ -20,6 +20,7 @@
 @custom-variant w1100 (@media (width <= 1100px));
 @custom-variant w880 (@media (width <= 880px));
 @custom-variant w580 (@media (width <= 580px));
+@custom-variant w520 (@media (width <= 520px));
 @custom-variant w450 (@media (width <= 450px));
 @custom-variant w320 (@media (width <= 320px));
 @custom-variant h760 (@media (height <= 760px));
@@ -77,7 +78,7 @@
 
   /* Links */
   .link {
-    @apply text-secondary underline underline-offset-2 transition-[text-decoration-color] duration-200 hover:decoration-transparent;
+    @apply text-secondary transition-colors duration-200 hover:text-body;
   }
 
   /* Buttons */
@@ -141,5 +142,26 @@
   }
   .static-cv a {
     @apply text-secondary underline underline-offset-2;
+  }
+}
+
+/*
+ * Lightbox caption bar (yet-another-react-lightbox): hidden until the visitor
+ * hovers the image with a mouse, or taps the image on a phone (ProjectGallery
+ * toggles .lightbox--captions-shown). Not in a @layer on purpose: the lightbox's
+ * own CSS is unlayered, and unlayered CSS always beats layered CSS.
+ */
+.yarl__portal .yarl__slide_captions_container {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.yarl__portal.lightbox--captions-shown .yarl__slide_captions_container {
+  opacity: 1;
+}
+@media (hover: hover) {
+  /* the bar itself counts too, so it doesn't flicker when the mouse moves onto it */
+  .yarl__portal .yarl__slide:has(.yarl__slide_image:hover) .yarl__slide_captions_container,
+  .yarl__portal .yarl__slide_captions_container:hover {
+    opacity: 1;
   }
 }

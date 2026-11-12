@@ -193,7 +193,7 @@
     ],
     "github": "https://github.com/devalexmuha/vanilla-framework",
     "title": "[“Vanilla Core”](https://github.com/devalexmuha/vanilla-framework): custom made MVC PHP framework",
-    "description": "A mini Laravel I wrote from scratch in plain PHP. It has a DI container that wires classes automatically using Reflection, a regex router with route groups, a middleware pipeline, Request/Response objects, a PDO model layer and a Blade-like template engine. Authentication is protected by built-in auth, guest and csrf middleware, plus session-fixation defence. I built it to see how a framework works from the inside.",
+    "description": "MPV version of Laravel I wrote from scratch in plain PHP. It has a DI container that wires classes automatically using Reflection, a regex router with route groups, a middleware pipeline, Request/Response objects, a PDO model layer and a Blade-like template engine. Authentication is protected by built-in auth, guest and csrf middleware, plus session-fixation defence. I built it to see how a framework works from the inside.",
     "images": [
       {
         "src": "media/images/project-photos/vanilla-core/1-vanilla-core-php-framework-welcome-page.png",

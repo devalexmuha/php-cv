@@ -51,7 +51,7 @@ export function renderStaticHtml(cv, projects) {
         ${list(workWith.items)}
         <h3>${esc(skills.hard.title)}: ${esc(toStudy.title)}</h3>
         ${list(toStudy.items)}
-        <h3>${esc(skills.soft.title)}</h3>
+        <h3>${esc(skills.soft.title)}: ${esc(skills.soft.listTitle)}</h3>
         ${list(skills.soft.items)}
         <h3>${esc(skills.languages.title)}</h3>
         ${list(skills.languages.items)}
@@ -85,7 +85,7 @@ export function renderStaticHtml(cv, projects) {
 
     <section>
         <h2>${esc(experience.title)}</h2>
-        ${experience.items.map((e) => `<h3>${esc(e.title)}</h3><p>${e.lines.map(esc).join(' · ')}</p><p>${richHtml(e.text)}</p>`).join('')}
+        ${experience.items.map((e) => `<h3>${esc(e.title)}</h3><p>${richHtml(e.lines.join(' · '))}</p><p>${richHtml(e.text)}</p>`).join('')}
     </section>
 
     <section>
@@ -143,7 +143,7 @@ ${mdList(workWith.items)}
 
 ${mdList(toStudy.items)}
 
-### ${skills.soft.title}
+### ${skills.soft.title}: ${skills.soft.listTitle}
 
 ${mdList(skills.soft.items)}
 

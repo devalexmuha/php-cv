@@ -15,8 +15,8 @@ import ValuesStep from './components/steps/ValuesStep.jsx';
 import ContactsStep from './components/steps/ContactsStep.jsx';
 
 export const steps = [
-    { id: 'hello', chapter: 'Hello', label: 'Hello', Component: HeroStep },
-    { id: 'skills', chapter: 'Skills', label: 'My skills', Component: SkillsStep },
+    { id: 'hello', chapter: 'Welcome', label: 'Welcome', Component: HeroStep },
+    { id: 'skills', chapter: 'My skills', label: 'My skills', Component: SkillsStep },
     { id: 'what-i-can-do', chapter: 'What I can do', label: 'What I can do', Component: CanDoStep },
 
     // One step per pet project, generated from src/data/projects.json
@@ -28,7 +28,7 @@ export const steps = [
         props: { project, number: i + 1, total: projects.length },
     })),
 
-    { id: 'education-and-experience', chapter: 'Background', label: 'Education & experience', Component: BackgroundStep },
+    { id: 'education-and-experience', chapter: 'Education & experience', label: 'Education & experience', Component: BackgroundStep },
     { id: 'why-me', chapter: 'Why me', label: 'Why me', Component: ValuesStep },
     { id: 'contacts', chapter: 'Contacts', label: 'Contacts', Component: ContactsStep },
 ];

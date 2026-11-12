@@ -178,7 +178,7 @@ Edit the `@theme` block at the top of `src/main.css`. All components use these t
 ### Responsive rules
 
 Same system as before: `w880:...` means "when the screen is 880px wide or less".
-Variants: `w1100`, `w880`, `w580`, `w450`, `w320`, and `h760` (screen height 760px or less).
+Variants: `w1100`, `w880`, `w580`, `w520`, `w450`, `w320`, and `h760` (screen height 760px or less).
 
 ---
 
@@ -241,5 +241,5 @@ npm run preview    # serves dist/ exactly as it will be published
 | `vite`, `@vitejs/plugin-react` | Dev server and build tool |
 | `tailwindcss`, `@tailwindcss/vite` | Styling (same as before) |
 | `motion` | Step transitions (going deeper / coming back), turned off for visitors who prefer reduced motion |
-| `yet-another-react-lightbox` | Screenshot viewer: swipe, keyboard, zoom, captions, thumbnails |
+| `yet-another-react-lightbox` | Screenshot viewer: swipe, keyboard, zoom, captions |
 | `sharp` (dev only) | Makes the WebP thumbnails in `npm run thumbs` |

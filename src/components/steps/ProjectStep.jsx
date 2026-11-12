@@ -33,7 +33,7 @@ export default function ProjectStep({ project, number, total }) {
                 <ProjectGallery project={project} />
             </div>
 
-            <div className="flex flex-col gap-5 self-start [grid-area:body]">
+            <div className="flex flex-col gap-8 self-start [grid-area:body] h760:gap-5">
                 <p className="text">{project.description}</p>
                 <a href={project.github} target="_blank" rel="noopener" className="btn btn--outline self-start">
                     <Icon name="github" />

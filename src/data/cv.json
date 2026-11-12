@@ -1,7 +1,7 @@
 {
   "person": {
     "name": "Oleksandr Harazha",
-    "photo": "media/images/photos/hero-image.jpg",
+    "photo": "media/images/photos/oleksandr-harazha-photo.webp",
     "photoAlt": "Oleksandr Harazha, author of this CV, sitting on a chair",
     "resume": "media/docs/oleksandr-harazha-resume.pdf",
     "signature": "media/images/icons/muha-sign.svg"
@@ -12,7 +12,7 @@
     "title": "Junior PHP / Laravel Developer",
     "tagline": "PHP solutions for business, with an SEO mindset from day one.",
     "aboutTitle": "About Me",
-    "about": "My name is Oleksandr Harazha, and I am 22 years old. I love writing vanilla PHP, and I like building with Laravel. To learn about me as a vanilla PHP developer, please read my [“Vanilla Core”](https://github.com/devalexmuha/vanilla-framework) MVC framework, which I built with love, on purpose, to see how a backend works from the inside, at a low level. To learn about me as a Laravel developer, please read my [“Thirteen Flies”](https://github.com/devalexmuha/thirteenflies), a fully-fledged e-commerce API with Filament as the admin panel and Stripe Checkout integration. Now, in detail:"
+    "about": "My name is Oleksandr Harazha, and I am 22 years old. I love writing vanilla PHP, and I like building with Laravel. To learn about me as a vanilla PHP developer, please read my [“Vanilla Core”](https://github.com/devalexmuha/vanilla-framework) MVC framework, which I built with love, on purpose, to see how a backend works from the inside, at a low level. To learn about me as a Laravel developer, please read my [“Thirteen Flies”](https://github.com/devalexmuha/thirteenflies), a fully-fledged e-commerce API with Filament as the admin panel and Stripe Checkout integration."
   },
 
   "aiSummarize": {
@@ -52,6 +52,7 @@
     },
     "soft": {
       "title": "Soft",
+      "listTitle": "All about me",
       "items": [
         { "term": "High communication skills", "note": "just give me a microphone, and you’ll never take it away from me" },
         { "term": "Team leadership", "note": "I love to take responsibility on my shoulders and lead people to success" },
@@ -98,12 +99,12 @@
     "items": [
       {
         "title": "Upper Junior SEO Specialist",
-        "lines": ["Trendo · Full time", "Nov 2024 - Present"],
+        "lines": ["[Trendo](https://trendo.me/) · Full time", "Nov 2024 - Present"],
         "text": "With 2 years of experience in the marketing industry as an upper junior SEO specialist, I found myself doing a lot of content placement work, and doing it well. So one year ago, I took the courage to meet my childhood dream of becoming a software engineer face to face, and opened up an entirely new form of art for myself. With the help of experienced developers at my company, after 4 months of thinking as a frontend developer, I became keenly interested in backend development. It’s already been 9 months since I started with PHP. Currently, I want to strengthen my frontend skills and move in the direction of full stack."
       },
       {
         "title": "Trainee PHP Backend Developer",
-        "lines": ["Trendo · Every morning", "Oct 2026 - Present"],
+        "lines": ["[Trendo](https://trendo.me/) · Every morning", "Oct 2026 - Present"],
         "text": "Thanks to the development team at my company, I was given the opportunity to get my first commercial experience and learn how to work with Git in a team. Currently, I’m helping with the development of a Laravel e-commerce store: [infrost.com.ua](https://infrost.com.ua/)"
       }
     ]
@@ -117,7 +118,7 @@
       "Communication in your team happens in English."
     ],
     "extraTitle": "Additionally",
-    "extra": "I’m used to working in a friendly environment, in a team where you can speak to the company owner like to a close friend. I’ll be happy to find a team like this again. Trendo showed me how good a team can be, and I’m sure it’s not the only place like that."
+    "extra": "I’m used to working in a friendly environment, in a team where you can speak to the company owner like to a close friend. I’ll be happy to find a team like this again."
   },
 
   "drives": {
@@ -142,13 +143,13 @@
 
   "contacts": {
     "title": "Contact details",
-    "email": "olekandrgaraza@gmail.com",
+    "email": "dev.alex.muha@gmail.com",
     "phone": "+380960358697",
     "links": [
       { "label": "LinkedIn", "href": "https://www.linkedin.com/in/oleksandr-harazha-31910b314/", "icon": "media/images/icons/linkedin-icon.svg" },
       { "label": "Telegram", "href": "https://t.me/alexmuuha", "icon": "media/images/icons/telegram-icon.svg" }
     ],
     "github": { "label": "Open GitHub", "href": "https://github.com/devalexmuha/" },
-    "credits": "Designed by Alex Muha"
+    "credits": "Developed by Muha"
   }
 }

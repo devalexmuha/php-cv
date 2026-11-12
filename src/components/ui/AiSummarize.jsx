@@ -29,8 +29,9 @@ export default function AiSummarize() {
     }
 
     return (
-        <div className="relative flex flex-wrap items-center gap-x-5 gap-y-2.5">
-            <p className="text">{cv.aiSummarize.label}</p>
+        <div className="relative flex flex-wrap items-center gap-x-4 gap-y-2.5">
+            {/* Hidden when the parent "actions" container (HeroStep) is under 600px wide */}
+            <span className="font-title text-[15px] text-body/55 @max-[600px]/actions:hidden">Summarize:</span>
             <ul className="flex items-center gap-2.5">
                 {services.map(({ name, href, Icon, copyPrompt: shouldCopy }) => (
                     <li key={name}>
@@ -49,7 +50,7 @@ export default function AiSummarize() {
                 ))}
             </ul>
             {/* Always in the DOM (screen readers announce changes), positioned so it takes no space */}
-            <p role="status" className="absolute top-full left-0 mt-1 font-title text-[13px] text-secondary">
+            <p role="status" className="absolute top-full left-0 mt-1 font-title text-[13px] leading-none text-secondary">
 
                 {copied ? 'Prompt copied. Paste it into Gemini.' : ''}
             </p>

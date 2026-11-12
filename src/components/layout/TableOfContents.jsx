@@ -19,9 +19,8 @@ export default function TableOfContents({ steps, navigation }) {
 
     return (
         <>
-            <button type="button" className="btn btn--outline w580:size-11 w580:px-0" onClick={open} aria-haspopup="dialog">
+            <button type="button" className="btn btn--outline btn--icon" onClick={open} aria-haspopup="dialog" aria-label="Open contents">
                 <Icon name="menu" />
-                <span className="w580:sr-only">Contents</span>
             </button>
 
             <dialog

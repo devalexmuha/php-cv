@@ -5,19 +5,16 @@ import { useState } from 'react';
 import Lightbox from 'yet-another-react-lightbox';
 import Captions from 'yet-another-react-lightbox/plugins/captions';
 import Counter from 'yet-another-react-lightbox/plugins/counter';
-import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails';
 import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 import 'yet-another-react-lightbox/styles.css';
 import 'yet-another-react-lightbox/plugins/captions.css';
 import 'yet-another-react-lightbox/plugins/counter.css';
-import 'yet-another-react-lightbox/plugins/thumbnails.css';
 import { asset } from '../../lib/asset.js';
 import Icon from './Icon.jsx';
 
 const THUMB_WIDTH = 640; // size made by `npm run thumbs`
 
-// The lightbox wants "slides". srcSet lets it use the small WebP for its own
-// thumbnail strip and the full PNG for the big view.
+// The lightbox wants "slides". The big view always shows the original PNG.
 function toSlide(image) {
     return {
         src: asset(image.src),
@@ -25,16 +22,18 @@ function toSlide(image) {
         description: image.alt,
         width: image.width,
         height: image.height,
-        srcSet: [
-            { src: asset(image.thumb), width: THUMB_WIDTH, height: Math.round((THUMB_WIDTH * image.height) / image.width) },
-            { src: asset(image.src), width: image.width, height: image.height },
-        ],
     };
 }
 
 export default function ProjectGallery({ project }) {
     const [openIndex, setOpenIndex] = useState(-1); // -1 = lightbox closed
+    const [captionsShown, setCaptionsShown] = useState(false); // phones: a tap on the image toggles the caption
     const [cover, ...rest] = project.images;
+
+    function closeLightbox() {
+        setOpenIndex(-1);
+        setCaptionsShown(false);
+    }
 
     return (
         <div className="flex min-w-0 flex-col gap-3">
@@ -43,11 +42,12 @@ export default function ProjectGallery({ project }) {
                 onClick={() => setOpenIndex(0)}
                 className="group relative block cursor-zoom-in overflow-hidden rounded-2xl border border-disabled bg-footer"
             >
+                {/* The big cover uses the original PNG: the 640px thumb looks blurry at this size */}
                 <img
-                    src={asset(cover.thumb)}
+                    src={asset(cover.src)}
                     alt={cover.alt}
-                    width={THUMB_WIDTH}
-                    height={360}
+                    width={cover.width}
+                    height={cover.height}
                     className="aspect-video w-full object-cover object-top transition-[scale] duration-500 group-hover:scale-[1.03]"
                 />
                 <span className="absolute right-3 bottom-3 flex items-center gap-2 rounded-full bg-body/85 px-3.5 py-1.5 font-title text-[13px] text-white backdrop-blur">
@@ -82,11 +82,13 @@ export default function ProjectGallery({ project }) {
             <Lightbox
                 open={openIndex >= 0}
                 index={Math.max(openIndex, 0)}
-                close={() => setOpenIndex(-1)}
+                close={closeLightbox}
                 slides={project.images.map(toSlide)}
-                plugins={[Captions, Counter, Thumbnails, Zoom]}
+                // The caption bar is hidden until you hover the image (mouse) or tap it (phone), see main.css
+                className={captionsShown ? 'lightbox--captions-shown' : ''}
+                on={{ click: () => setCaptionsShown((shown) => !shown) }}
+                plugins={[Captions, Counter, Zoom]}
                 captions={{ descriptionTextAlign: 'center', descriptionMaxLines: 4 }}
-                thumbnails={{ width: 96, height: 54, border: 1, borderRadius: 6, padding: 0, gap: 8, vignette: false }}
                 carousel={{ finite: true }}
                 zoom={{ maxZoomPixelRatio: 2 }}
                 styles={{ container: { backgroundColor: 'rgb(20, 20, 20)' } }}
