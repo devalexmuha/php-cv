@@ -1,0 +1,154 @@
+{
+  "person": {
+    "name": "Oleksandr Harazha",
+    "photo": "media/images/photos/hero-image.jpg",
+    "photoAlt": "Oleksandr Harazha, author of this CV, sitting on a chair",
+    "resume": "media/docs/oleksandr-harazha-resume.pdf",
+    "signature": "media/images/icons/muha-sign.svg"
+  },
+
+  "hero": {
+    "code": "abort_if(in_array($job->niche, ['iGaming', 'casino', 'betting']), 403);",
+    "title": "Junior PHP / Laravel Developer",
+    "tagline": "PHP solutions for business, with an SEO mindset from day one.",
+    "aboutTitle": "About Me",
+    "about": "My name is Oleksandr Harazha, and I am 22 years old. I love writing vanilla PHP, and I like building with Laravel. To learn about me as a vanilla PHP developer, please read my [“Vanilla Core”](https://github.com/devalexmuha/vanilla-framework) MVC framework, which I built with love, on purpose, to see how a backend works from the inside, at a low level. To learn about me as a Laravel developer, please read my [“Thirteen Flies”](https://github.com/devalexmuha/thirteenflies), a fully-fledged e-commerce API with Filament as the admin panel and Stripe Checkout integration. Now, in detail:"
+  },
+
+  "aiSummarize": {
+    "label": "Summarize this CV with AI:",
+    "prompt": "Summarize this CV and tell me if this candidate fits a Junior PHP/Laravel role: https://devalexmuha.github.io/php-cv/"
+  },
+
+  "skills": {
+    "title": "My Skills",
+    "hard": {
+      "title": "Hard",
+      "groups": [
+        {
+          "title": "I work with",
+          "items": [
+            { "term": "PHP", "note": "OOP / Procedural" },
+            { "term": "Laravel", "note": "can build api, can work with blade" },
+            { "term": "MySql, MariaDB, SQLite", "note": "can design myself database structure for best performance and growth" },
+            { "term": "Filament" },
+            { "term": "HTML / CSS" },
+            { "term": "Basic JS6", "note": "can write myself plain things, can read and understand others code, can ask claude and than edit" },
+            { "term": "Basic understanding of the WordPress" },
+            { "term": "Claude Code", "note": "I prefer to write myself, but when speed needed I know when use it and most importantly when not to use it" }
+          ]
+        },
+        {
+          "title": "List to study",
+          "items": [
+            { "term": "SOLID", "note": "I love when everything is clean and reusable, so: S-single responsibility, OLID- yet pending to my mind" },
+            { "term": "Docker" },
+            { "term": "Tailwind" },
+            { "term": "Advanced JS6" },
+            { "term": "React", "note": "my goal in 2027 to master RILT stack, so with my knowledge in SEO I’ll able to build myself real solutions for business" }
+          ]
+        }
+      ]
+    },
+    "soft": {
+      "title": "Soft",
+      "items": [
+        { "term": "High communication skills", "note": "just give me a microphone, and you’ll never take it away from me" },
+        { "term": "Team leadership", "note": "I love to take responsibility on my shoulders and lead people to success" },
+        { "term": "Time management", "note": "time is my best friend" },
+        { "term": "Patience", "note": "I love when everything is settled into a consistent routine" },
+        { "term": "Hardworking", "note": "there are over 8 billion people on Earth, and to be at least in the top million, there’s no time for rest days and sleeping" }
+      ]
+    },
+    "languages": {
+      "title": "Languages I speak",
+      "items": [
+        { "term": "English", "note": "B1/B2 : I can understand fluently but might struggle to use fancy words in my speech" },
+        { "term": "Ukrainian / Russian", "note": "Native" },
+        { "term": "Currently studying Spanish" }
+      ]
+    }
+  },
+
+  "canDo": {
+    "title": "What I can do",
+    "paragraphs": [
+      "I build backend PHP solutions for businesses, from new projects to supporting and fixing legacy code. I can also work with WordPress when a project needs it, but for efficiency, I love and prefer Laravel.",
+      "I use Laravel for anything that needs complexity: an e-commerce store, a hotel website with a booking system, an online school, etc. Building these feels like art to me.",
+      "Additionally, with my experience in SEO, I can advise during development on what will work for search engines and what is better to fix now, before it becomes a problem after launch."
+    ]
+  },
+
+  "projectsTitle": "My Pet Projects",
+
+  "education": {
+    "title": "My Education",
+    "items": [
+      {
+        "title": "Poltava Polytechnic Professional College, a Separated Structural Unit of National Technical University \"Kharkiv Polytechnic Institute\"",
+        "lines": ["Grade: Software Developer", "Sep 2019 - Jun 2023"],
+        "logo": "media/images/photos/ppfc-logo.png",
+        "logoAlt": "Poltava Polytechnic College logo"
+      }
+    ]
+  },
+
+  "experience": {
+    "title": "My Experience",
+    "items": [
+      {
+        "title": "Upper Junior SEO Specialist",
+        "lines": ["Trendo · Full time", "Nov 2024 - Present"],
+        "text": "With 2 years of experience in the marketing industry as an upper junior SEO specialist, I found myself doing a lot of content placement work, and doing it well. So one year ago, I took the courage to meet my childhood dream of becoming a software engineer face to face, and opened up an entirely new form of art for myself. With the help of experienced developers at my company, after 4 months of thinking as a frontend developer, I became keenly interested in backend development. It’s already been 9 months since I started with PHP. Currently, I want to strengthen my frontend skills and move in the direction of full stack."
+      },
+      {
+        "title": "Trainee PHP Backend Developer",
+        "lines": ["Trendo · Every morning", "Oct 2026 - Present"],
+        "text": "Thanks to the development team at my company, I was given the opportunity to get my first commercial experience and learn how to work with Git in a team. Currently, I’m helping with the development of a Laravel e-commerce store: [infrost.com.ua](https://infrost.com.ua/)"
+      }
+    ]
+  },
+
+  "match": {
+    "title": "We are a perfect match if",
+    "items": [
+      "You already have experienced developers, your business is growing, and your team needs help.",
+      "In the near future you’ll need a full-stack developer, but for now you’re happy to hire a backend developer.",
+      "Communication in your team happens in English."
+    ],
+    "extraTitle": "Additionally",
+    "extra": "I’m used to working in a friendly environment, in a team where you can speak to the company owner like to a close friend. I’ll be happy to find a team like this again. Trendo showed me how good a team can be, and I’m sure it’s not the only place like that."
+  },
+
+  "drives": {
+    "title": "What drives me",
+    "items": [
+      {
+        "title": "Music",
+        "quote": "\"The idea of me singing in the evening makes me move quicker in the morning.\"",
+        "list": ["Singing: I love this from my heart;", "Piano: In combination with singing, it feels like time has stopped."]
+      },
+      {
+        "title": "Calisthenics",
+        "quote": "\"I love to be healthy, so I love to do my day-to-day rings workout.\""
+      }
+    ]
+  },
+
+  "ps": {
+    "title": "P.S.",
+    "text": "Currently moving from Ukraine to Spain. To save my dearest soul from the war. By this you can be sure that my location and war will not cause any problems to our business."
+  },
+
+  "contacts": {
+    "title": "Contact details",
+    "email": "olekandrgaraza@gmail.com",
+    "phone": "+380960358697",
+    "links": [
+      { "label": "LinkedIn", "href": "https://www.linkedin.com/in/oleksandr-harazha-31910b314/", "icon": "media/images/icons/linkedin-icon.svg" },
+      { "label": "Telegram", "href": "https://t.me/alexmuuha", "icon": "media/images/icons/telegram-icon.svg" }
+    ],
+    "github": { "label": "Open GitHub", "href": "https://github.com/devalexmuha/" },
+    "credits": "Designed by Alex Muha"
+  }
+}

@@ -22,12 +22,16 @@
   "homepage": "https://github.com/devalexmuha/cv-project#readme",
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.5",
+    "@vitejs/plugin-react": "^6.3.0",
     "sharp": "^0.35.5",
     "tailwindcss": "^4.3.5",
     "vite": "^8.3.7"
   },
   "private": true,
   "dependencies": {
-    "photoswipe": "^5.4.4"
+    "motion": "^14.12.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "yet-another-react-lightbox": "^3.33.0"
   }
 }
