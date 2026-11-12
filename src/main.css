@@ -80,6 +80,56 @@
   .link {
     @apply text-secondary underline transition-[text-decoration-color,color] duration-200 ease-[ease] hover:decoration-transparent;
   }
+
+  /* "Summarize with AI" icon links */
+  .ai-link {
+    @apply flex size-11 items-center justify-center rounded-full border border-disabled text-body transition-[border-color,translate] duration-200 hover:-translate-y-0.5 hover:border-body;
+  }
+  .ai-link svg {
+    @apply size-6;
+  }
+
+  /* Accordion: native <details>/<summary>, opens and closes without JS */
+  .accordion {
+    interpolate-size: allow-keywords;
+  }
+  .accordion::details-content {
+    block-size: 0;
+    overflow: clip;
+    transition: block-size 0.3s ease, content-visibility 0.3s allow-discrete;
+  }
+  .accordion[open]::details-content {
+    block-size: auto;
+  }
+  .accordion__summary {
+    @apply flex cursor-pointer list-none items-center justify-between gap-5;
+  }
+  .accordion__summary::-webkit-details-marker {
+    display: none;
+  }
+  .accordion__summary::after {
+    @apply shrink-0 transition-[rotate] duration-200;
+    content: url(/media/images/icons/right-chevrone--secondary.svg);
+  }
+  .accordion[open] > .accordion__summary::after {
+    rotate: 90deg;
+  }
+
+  /* Pet project gallery thumbnails (opened in PhotoSwipe by src/js/gallery.js) */
+  .gallery {
+    @apply grid grid-cols-4 gap-2.5 w880:grid-cols-3 w450:grid-cols-2;
+  }
+  .gallery__item {
+    @apply block overflow-hidden border border-disabled;
+  }
+  .gallery__item img {
+    @apply aspect-video w-full object-cover object-top transition-[scale] duration-300 hover:scale-105;
+  }
+
+  /* Caption under the opened image in the lightbox */
+  .gallery-caption {
+    @apply absolute inset-x-0 bottom-0 mx-auto max-w-[900px] px-5 py-4 text-center font-main text-[18px] leading-[140%] text-white;
+  }
 }
 
 @layer components {

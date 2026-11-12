@@ -4,17 +4,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-A single-page static CV site (one `index.html`), built with Vite + Tailwind CSS v4. There is no JavaScript application code, no test suite and no linter.
+A single-page static CV site (one `index.html`), built with Vite + Tailwind CSS v4, plus a little vanilla JS (galleries, copy-prompt). There is no test suite and no linter.
 
 ## Commands
 
 - `npm run dev` — Vite dev server
 - `npm run build` — production build to `dist/`
 - `npm run preview` — serve the built `dist/`
+- `npm run thumbs` — regenerate the WebP gallery thumbnails (`project-photos/<project>/thumbs/`) after adding or renaming screenshots
 
 ## Architecture
 
-- `index.html` (repo root) is the only page. All styling is Tailwind utility classes inline in the markup; it links `/src/main.css` directly (no JS entry point).
+- `index.html` (repo root) is the only page. All styling is Tailwind utility classes inline in the markup; it links `/src/main.css` directly and loads `/src/main.js` as a module.
+- `src/main.js` only wires up feature modules in `src/js/`: `gallery.js` (PhotoSwipe lightbox for every `<ul data-gallery>`, alt text shown as caption) and `copy-prompt.js` (copies `data-copy-prompt` text to the clipboard on click, used for the Gemini link).
+- Pet projects are native `<details name="pet-projects">` accordions (one open at a time, no JS). Gallery screenshots in `public/media/images/project-photos/<project>/` are named `<story-order>-<project>-<what-it-shows>.png`; the number prefix is the story order and must stay. Thumbnails `<img>` point to `thumbs/*.webp`, the `<a href>` to the full PNG with `data-pswp-width/height`.
+- In HTML, `<img src>` uses root-absolute `/media/...` (Vite rewrites it), but `<a href>` must be relative `./media/...` because Vite does not rewrite links.
 - `src/main.css` holds the Tailwind setup: `@theme` design tokens (colors `body`/`accent`/`secondary`/`disabled`/`footer`, fonts `title`/`main`), a few `@layer base`/`components` rules, and custom max-width variants `w880`, `w580`, `w450`, `w320` (`@media (width <= N)`). Use these variants (e.g. `w450:h-[100px]`) for responsive rules instead of Tailwind's default mobile-first breakpoints. They are registered widest to narrowest so narrower rules win.
 - `public/media/` holds static assets (images, icons, resume PDF). Reference them with root-absolute paths such as `/media/images/...`; Vite copies `public/` to the build root as-is.
 - Fonts (Literata, Crimson Pro) load from Google Fonts via `<link>` in `index.html`.
