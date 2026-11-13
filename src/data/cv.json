@@ -3,7 +3,7 @@
     "name": "Oleksandr Harazha",
     "photo": "media/images/photos/oleksandr-harazha-photo.webp",
     "photoAlt": "Oleksandr Harazha, author of this CV, sitting on a chair",
-    "resume": "media/docs/oleksandr-harazha-resume.pdf",
+    "resume": "media/docs/oleksandr-harazha-php-cv.pdf",
     "signature": "media/images/icons/muha-sign.svg"
   },
 
@@ -100,6 +100,8 @@
       {
         "title": "Upper Junior SEO Specialist",
         "lines": ["[Trendo](https://trendo.me/) · Full time", "Nov 2024 - Present"],
+        "logo": "media/images/photos/trendo-logo.webp",
+        "logoAlt": "Trendo logo",
         "text": "With 2 years of experience in the marketing industry as an upper junior SEO specialist, I found myself doing a lot of content placement work, and doing it well. So one year ago, I took the courage to meet my childhood dream of becoming a software engineer face to face, and opened up an entirely new form of art for myself. With the help of experienced developers at my company, after 4 months of thinking as a frontend developer, I became keenly interested in backend development. It’s already been 9 months since I started with PHP. Currently, I want to strengthen my frontend skills and move in the direction of full stack."
       },
       {

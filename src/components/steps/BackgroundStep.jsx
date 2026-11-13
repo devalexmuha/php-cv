@@ -39,6 +39,10 @@ export default function BackgroundStep() {
                             <p className="text">
                                 <RichText text={item.text} />
                             </p>
+                            {/* Optional company logo, same size as the college logo */}
+                            {item.logo && (
+                                <img src={asset(item.logo)} alt={item.logoAlt} className="mt-2 h-[90px] w-auto self-start rounded-xl w450:h-[72px]" />
+                            )}
                         </li>
                     ))}
                 </ol>

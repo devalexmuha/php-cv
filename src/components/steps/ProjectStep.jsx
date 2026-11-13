@@ -34,7 +34,9 @@ export default function ProjectStep({ project, number, total }) {
             </div>
 
             <div className="flex flex-col gap-8 self-start [grid-area:body] h760:gap-5">
-                <p className="text">{project.description}</p>
+                <p className="text">
+                    <RichText text={project.description} />
+                </p>
                 <a href={project.github} target="_blank" rel="noopener" className="btn btn--outline self-start">
                     <Icon name="github" />
                     Code on GitHub

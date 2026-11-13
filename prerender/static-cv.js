@@ -17,9 +17,11 @@ function esc(text) {
     return String(text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-// "[label](url)" links from the JSON -> <a> tags (the rest is escaped)
+// "[label](url)" links -> <a> tags and `code` -> <code> tags (the rest is escaped)
 function richHtml(text) {
-    return esc(text).replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+    return esc(text)
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+        .replace(/`([^`]+)`/g, '<code>$1</code>');
 }
 
 const stripLinks = (text) => text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
@@ -70,7 +72,7 @@ export function renderStaticHtml(cv, projects) {
         <section>
             <h3>${richHtml(project.title)}</h3>
             <p>Tech stack: ${esc(project.stack.join(', '))}. Code: <a href="${project.github}">${project.github}</a></p>
-            <p>${esc(project.description)}</p>
+            <p>${richHtml(project.description)}</p>
             <p>Screenshots, in story order (what the project can do):</p>
             <ol>${project.images.map((image) => `<li><a href="${image.src}">${esc(image.alt)}</a></li>`).join('')}</ol>
         </section>`,
