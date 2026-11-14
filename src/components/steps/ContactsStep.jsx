@@ -46,7 +46,8 @@ export default function ContactsStep() {
                     <ContactRow href={`mailto:${contacts.email}`} icon={<Icon name="mail" />}>
                         {contacts.email}
                     </ContactRow>
-                    <ContactRow href={`tel:${contacts.phone}`} icon={<Icon name="phone" />}>
+                    {/* The phone number opens a WhatsApp chat (wa.me needs digits only) */}
+                    <ContactRow href={`https://wa.me/${contacts.phone.replace(/\D/g, '')}`} external icon={<Icon name="whatsapp" />}>
                         {contacts.phone}
                     </ContactRow>
                 </ul>
