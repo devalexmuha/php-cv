@@ -28,8 +28,8 @@
         {
           "title": "I work with",
           "items": [
-            { "term": "PHP", "note": "OOP / Procedural" },
-            { "term": "Laravel", "note": "can build api, can work with blade" },
+            { "term": "PHP", "note": "version 8.2+ with focus on OOP" },
+            { "term": "Laravel", "note": "REST APIs, Blade" },
             { "term": "MySql, MariaDB, SQLite", "note": "can design myself database structure for best performance and growth" },
             { "term": "Filament" },
             { "term": "HTML / CSS" },
