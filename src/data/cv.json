@@ -12,7 +12,7 @@
     "title": "Junior PHP / Laravel Developer",
     "tagline": "PHP solutions for business, with an SEO mindset from day one.",
     "aboutTitle": "About Me",
-    "about": "Modern PHP with a focus on OOP, MySQL, Laravel, REST APIs, Filament, service patterns, business logic, and past SEO experience: that’s all about me. In my free time, I love writing low-level vanilla PHP and building complex, brainy things like my [Vanilla Core](https://github.com/devalexmuha/vanilla-framework) framework, whose V1 I finished in September. Now I’m planning to add my own custom-written ORM and some more features, and release V2: this is art for me. For bigger projects I work with Laravel: I recently finished my own fully-fledged e-commerce API for the music store [“Thirteen Flies”](https://github.com/devalexmuha/thirteenflies), implemented Stripe Checkout and added SEO integration."
+    "about": "Modern PHP with a focus on OOP, MySQL, Laravel, REST APIs, Filament, service patterns, business logic, and past SEO experience: that’s all about me. My name is Oleksandr, I’m 22, in my free time I love writing low-level vanilla PHP and building complex, brainy things like my [Vanilla Core](https://github.com/devalexmuha/vanilla-framework) framework, whose V1 I finished in September. Now I’m planning to add my own custom-written ORM and some more features, and release V2: this is art for me. For bigger projects I work with Laravel: I recently finished my own fully-fledged e-commerce API for the music store [“Thirteen Flies”](https://github.com/devalexmuha/thirteenflies), implemented Stripe Checkout and added SEO integration."
   },
 
   "aiSummarize": {
@@ -28,7 +28,7 @@
         {
           "title": "I work with",
           "items": [
-            { "term": "PHP", "note": "version 8.2+ with focus on OOP" },
+            { "term": "PHP", "note": "version 8.4+ with focus on OOP" },
             { "term": "Laravel", "note": "REST APIs, Blade" },
             { "term": "MySql, MariaDB, SQLite", "note": "can design myself database structure for best performance and growth" },
             { "term": "Filament" },
