@@ -12,7 +12,7 @@
     "title": "Junior PHP / Laravel Developer",
     "tagline": "PHP solutions for business, with an SEO mindset from day one.",
     "aboutTitle": "About Me",
-    "about": "My name is Oleksandr Harazha, and I am 22 years old. I love writing vanilla PHP, and I like building with Laravel. To learn about me as a vanilla PHP developer, please read my [“Vanilla Core”](https://github.com/devalexmuha/vanilla-framework) MVC framework, which I built with love, on purpose, to see how a backend works from the inside, at a low level. To learn about me as a Laravel developer, please read my [“Thirteen Flies”](https://github.com/devalexmuha/thirteenflies), a fully-fledged e-commerce API with Filament as the admin panel and Stripe Checkout integration."
+    "about": "Modern PHP with a focus on OOP, MySQL, Laravel, REST APIs, Filament, service patterns, business logic, and past SEO experience: that’s all about me. In my free time, I love writing low-level vanilla PHP and building complex, brainy things like my [Vanilla Core](https://github.com/devalexmuha/vanilla-framework) framework, whose V1 I finished in September. Now I’m planning to add my own custom-written ORM and some more features, and release V2: this is art for me. For bigger projects I work with Laravel: I recently finished my own fully-fledged e-commerce API for the music store [“Thirteen Flies”](https://github.com/devalexmuha/thirteenflies), implemented Stripe Checkout and added SEO integration."
   },
 
   "aiSummarize": {
@@ -74,9 +74,8 @@
   "canDo": {
     "title": "What I can do",
     "paragraphs": [
-      "I build backend PHP solutions for businesses, from new projects to supporting and fixing legacy code. I can also work with WordPress when a project needs it, but for efficiency, I love and prefer Laravel.",
-      "I use Laravel for anything that needs complexity: an e-commerce store, a hotel website with a booking system, an online school, etc. Building these feels like art to me.",
-      "Additionally, with my experience in SEO, I can advise during development on what will work for search engines and what is better to fix now, before it becomes a problem after launch."
+      "I build backend modern PHP solutions for businesses, with a strong focus on Laravel and search engines in mind. When a project needs it, I can work with WordPress or support legacy code.",
+      "With Laravel, I start by designing the database architecture as the main base of the application, and I use service patterns so it can grow smoothly. Additionally, during development I’ll be happy to suggest features that help the project with SEO from day one."
     ]
   },
 
